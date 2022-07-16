@@ -63,7 +63,6 @@ class ViewController: UIViewController {
         }
         //Аудиоплеер конец
         
-        
         //introLabel - tagline - begin
         let introlabel = UILabel.init(frame: CGRect.init(x: 0, y: 30, width: 700, height: 300))
         introlabel.text = "Time is your only invicible enemy, everything else is a matter of time"
@@ -72,7 +71,6 @@ class ViewController: UIViewController {
         view.addSubview(introlabel)
         //introLabel - tagline - end
     }
-
 }
 
 //        видеоплеер с возможностью перемотки

@@ -70,7 +70,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="ndr-42-ZtE" kind="show" identifier="registeruser" id="H9q-Gz-ptH"/>
+                                    <action selector="goToUserVC:" destination="C4B-7Y-8cn" eventType="touchUpInside" id="Itv-Q5-Xvt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSZ-3X-cwD">
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1243" y="-277"/>
         </scene>
-        <!--View Controller-->
+        <!--Panel Controller-->
         <scene sceneID="bhc-gk-Cuo">
             <objects>
-                <viewController id="ndr-42-ZtE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UPanelID" id="ndr-42-ZtE" customClass="UPanelController" customModule="iProcess" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="avs-0j-dZq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
