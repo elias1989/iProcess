@@ -16,6 +16,8 @@
 		4D1EA624286747310021D95E /* LaunchClock.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D1EA623286747310021D95E /* LaunchClock.mp4 */; };
 		4D1EA626286839E60021D95E /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D1EA625286839E60021D95E /* checkbox.png */; };
 		4DAEC3F02882DEC6002932BE /* UPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEC3EF2882DEC5002932BE /* UPanelController.swift */; };
+		4DAEC3F42882F8EB002932BE /* AllTasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEC3F32882F8EB002932BE /* AllTasksController.swift */; };
+		4DAEC3F62882F90F002932BE /* AllTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEC3F52882F90F002932BE /* AllTasksCell.swift */; };
 		4DB8EB892868DD4A00D5054F /* LaunchTicTac.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8EB882868DD4A00D5054F /* LaunchTicTac.mp3 */; };
 		4DC92C442871720000FDB43B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC92C432871720000FDB43B /* UserViewController.swift */; };
 		4DC92C46287176C300FDB43B /* User Panel v.2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DC92C45287176C300FDB43B /* User Panel v.2.jpg */; };
@@ -33,6 +35,8 @@
 		4D1EA623286747310021D95E /* LaunchClock.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaunchClock.mp4; sourceTree = "<group>"; };
 		4D1EA625286839E60021D95E /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
 		4DAEC3EF2882DEC5002932BE /* UPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPanelController.swift; sourceTree = "<group>"; };
+		4DAEC3F32882F8EB002932BE /* AllTasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksController.swift; sourceTree = "<group>"; };
+		4DAEC3F52882F90F002932BE /* AllTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksCell.swift; sourceTree = "<group>"; };
 		4DB8EB882868DD4A00D5054F /* LaunchTicTac.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LaunchTicTac.mp3; sourceTree = "<group>"; };
 		4DC92C432871720000FDB43B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserViewController.swift; path = iProcess/UserViewController/UserViewController.swift; sourceTree = SOURCE_ROOT; };
 		4DC92C45287176C300FDB43B /* User Panel v.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "User Panel v.2.jpg"; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 				4D1EA614286745770021D95E /* Assets.xcassets */,
 				4D1EA625286839E60021D95E /* checkbox.png */,
 				4D1EA60D286745760021D95E /* SceneDelegate.swift */,
+				4DAEC3F22882F833002932BE /* TasksGroup */,
 				4D1EA60A286745760021D95E /* iProcess */,
 				4D1EA609286745760021D95E /* Products */,
 			);
@@ -98,6 +103,15 @@
 			children = (
 			);
 			path = "UPanelController v.3";
+			sourceTree = "<group>";
+		};
+		4DAEC3F22882F833002932BE /* TasksGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4DAEC3F32882F8EB002932BE /* AllTasksController.swift */,
+				4DAEC3F52882F90F002932BE /* AllTasksCell.swift */,
+			);
+			path = TasksGroup;
 			sourceTree = "<group>";
 		};
 		4DC92C4228716AB100FDB43B /* UserViewController */ = {
@@ -188,6 +202,8 @@
 				4DAEC3F02882DEC6002932BE /* UPanelController.swift in Sources */,
 				4DC92C442871720000FDB43B /* UserViewController.swift in Sources */,
 				4D1EA60C286745760021D95E /* AppDelegate.swift in Sources */,
+				4DAEC3F62882F90F002932BE /* AllTasksCell.swift in Sources */,
+				4DAEC3F42882F8EB002932BE /* AllTasksController.swift in Sources */,
 				4D1EA60E286745760021D95E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
