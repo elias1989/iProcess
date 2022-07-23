@@ -9,6 +9,10 @@ import UIKit
 
 class UPanelController: UIViewController {
     
+    var taskholder = [
+        "Hello world"
+    ]
+
     @IBOutlet weak var userTableView: UITableView!
     @IBOutlet weak var objectiveLabel: UILabel!
     @IBOutlet weak var priorityLabel: UILabel!
@@ -20,6 +24,7 @@ class UPanelController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userTableView.dataSource = self
+        userTableView.delegate = self
     }
     
     
@@ -41,27 +46,32 @@ class UPanelController: UIViewController {
     
     }
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
     }
+
     
-    
-    
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
 
 
-extension UPanelController: UITableViewDataSource {
+extension UPanelController: UITableViewDataSource, UITableViewDelegate  {
     func
     numberOfSections(in tableView: UITableView) -> Int {
         1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return taskholder.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return  tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath)
+        return cell
         }
     }
