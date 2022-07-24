@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1bD-8I-bEX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ndr-42-ZtE">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -204,6 +204,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="New task" subtitle=""/>
                                 <connections>
+                                    <action selector="goToTaskVC:" destination="U3h-jT-2Jn" eventType="touchUpInside" id="MLA-dV-wDv"/>
+                                    <action selector="goToTaskVC:" destination="ndr-42-ZtE" eventType="touchUpInside" id="fOt-un-VIX"/>
                                     <action selector="newTaskButton:" destination="ndr-42-ZtE" eventType="touchUpInside" id="kTz-LW-29N"/>
                                 </connections>
                             </button>
@@ -280,8 +282,25 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ost-PP-198" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="U3h-jT-2Jn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2020" y="-687.93103448275861"/>
+        </scene>
+        <!--Task View Controller-->
+        <scene sceneID="YfB-XP-9bt">
+            <objects>
+                <viewController storyboardIdentifier="UTaskViewID" id="swX-oA-Xj4" customClass="TaskViewController" customModule="iProcess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNK-iw-ewc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CLv-UT-LBu"/>
+                        <color key="backgroundColor" red="0.71979975699999998" green="0.73216474060000003" blue="0.98042076830000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4JI-LL-8wI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67L-Id-wec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2812" y="-901"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M7Y-tD-bns">

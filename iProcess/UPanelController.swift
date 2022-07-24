@@ -19,8 +19,6 @@ class UPanelController: UIViewController {
     @IBOutlet weak var deadlineLable: UILabel!
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         userTableView.dataSource = self
@@ -28,23 +26,20 @@ class UPanelController: UIViewController {
     }
     
     
-    
-    
     @IBAction func newTaskButton(_ sender: Any) {
         
     }
-    
     
     
     @IBAction func calendarViewButton(_ sender: Any) {
         
     }
     
-    
     @IBAction func sortByButton(_ sender: Any) {
         
     
     }
+    
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
@@ -57,6 +52,19 @@ class UPanelController: UIViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+    
+    
+    @IBAction func goToTaskVC(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let taskViewController = storyboard?.instantiateViewController(withIdentifier: "UTaskViewID") as! TaskViewController
+        
+        taskViewController.modalPresentationStyle = .fullScreen
+        self.present(taskViewController, animated: true, completion: nil)
+        
+    }
+    
+    
+    
 }
 
 

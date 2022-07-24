@@ -15,6 +15,7 @@
 		4D1EA618286745770021D95E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1EA616286745770021D95E /* LaunchScreen.storyboard */; };
 		4D1EA624286747310021D95E /* LaunchClock.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D1EA623286747310021D95E /* LaunchClock.mp4 */; };
 		4D1EA626286839E60021D95E /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D1EA625286839E60021D95E /* checkbox.png */; };
+		4D42403B288D874F003DE869 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42403A288D874F003DE869 /* TaskViewController.swift */; };
 		4DAEC3F02882DEC6002932BE /* UPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEC3EF2882DEC5002932BE /* UPanelController.swift */; };
 		4DAEC3F42882F8EB002932BE /* AllTasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEC3F32882F8EB002932BE /* AllTasksController.swift */; };
 		4DAEC3F62882F90F002932BE /* AllTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEC3F52882F90F002932BE /* AllTasksCell.swift */; };
@@ -34,6 +35,7 @@
 		4D1EA619286745770021D95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1EA623286747310021D95E /* LaunchClock.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaunchClock.mp4; sourceTree = "<group>"; };
 		4D1EA625286839E60021D95E /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
+		4D42403A288D874F003DE869 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		4DAEC3EF2882DEC5002932BE /* UPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPanelController.swift; sourceTree = "<group>"; };
 		4DAEC3F32882F8EB002932BE /* AllTasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksController.swift; sourceTree = "<group>"; };
 		4DAEC3F52882F90F002932BE /* AllTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksCell.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				4D1EA61F286746580021D95E /* LounchViewController */,
 				4D1EA60B286745760021D95E /* AppDelegate.swift */,
+				4D42403C288D875B003DE869 /* TaskViewCOntroller v.4 */,
 				4DAEC3F12882DF18002932BE /* UPanelController v.3 */,
 				4DAEC3EF2882DEC5002932BE /* UPanelController.swift */,
 				4DC92C4228716AB100FDB43B /* UserViewController */,
@@ -96,6 +99,14 @@
 				4DB8EB882868DD4A00D5054F /* LaunchTicTac.mp3 */,
 			);
 			path = LounchViewController;
+			sourceTree = "<group>";
+		};
+		4D42403C288D875B003DE869 /* TaskViewCOntroller v.4 */ = {
+			isa = PBXGroup;
+			children = (
+				4D42403A288D874F003DE869 /* TaskViewController.swift */,
+			);
+			path = "TaskViewCOntroller v.4";
 			sourceTree = "<group>";
 		};
 		4DAEC3F12882DF18002932BE /* UPanelController v.3 */ = {
@@ -203,6 +214,7 @@
 				4DC92C442871720000FDB43B /* UserViewController.swift in Sources */,
 				4D1EA60C286745760021D95E /* AppDelegate.swift in Sources */,
 				4DAEC3F62882F90F002932BE /* AllTasksCell.swift in Sources */,
+				4D42403B288D874F003DE869 /* TaskViewController.swift in Sources */,
 				4DAEC3F42882F8EB002932BE /* AllTasksController.swift in Sources */,
 				4D1EA60E286745760021D95E /* SceneDelegate.swift in Sources */,
 			);
